@@ -15,7 +15,7 @@ test.beforeEach('Login Page', async  ({page})=> {
     await page.getByPlaceholder('Username').fill(username);
     await page.getByPlaceholder('Password').fill(password);
     await page.getByRole('button',{name:'Login'}).click();
-
+   
     await expect(page).toHaveTitle('TTACart - Products');
     await console.log('Login successful');
 })
