@@ -14,7 +14,7 @@ import { defineConfig, devices, firefox } from '@playwright/test';
 export default defineConfig({
   testDir: './tests',
   reporter: 'html',
-  timeout: 30 * 1000,
+  timeout: 15 * 1000,
   expect: {
     timeout: 15 * 1000,
   },
