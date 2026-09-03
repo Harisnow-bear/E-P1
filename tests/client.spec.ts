@@ -1,8 +1,8 @@
 import {test , expect} from '@playwright/test'
-import url from '../config/urlconfig.json'
+import urls from '../config/urlconfig.json'
 
-test.skip('login', async ({page})=>{
-    await page.goto(url.clientappurl);
+test('login', async ({page})=>{
+    await page.goto(urls.clientappurl);
     await page.getByRole('link' ,{name : 'Register'}).click();
     await page.getByLabel('First Name').fill('Julius');
     await page.getByLabel('Last Name').fill('Ceasar');
